@@ -24,4 +24,4 @@ class OrangeHRMLogin(unittest.TestCase):
         self.assertEqual('OrangeHRM', self.driver.title, 'Webpage titles are not same ')
 
 if __name__ == "__main__":
-    unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='C:\\Users\\aniket bista\\PythonUnitTestProject\\Report'))
+    unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='..\\Report'))
