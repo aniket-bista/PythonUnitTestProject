@@ -15,7 +15,7 @@ class OrangeHRMLogin(unittest.TestCase):
 
     def test_homePageTitle(self):
         self.driver.get('https://opensource-demo.orangehrmlive.com/')
-        self.assertEqual('OrangeHRM', self.driver.title, 'Webpage titles are not same ')
+        self.assertEqual('OrangeHRM123', self.driver.title, 'Webpage titles are not same ')
 
     def test_login(self):
         self.driver.find_element_by_id('txtUsername').send_keys('Admin')
@@ -24,4 +24,4 @@ class OrangeHRMLogin(unittest.TestCase):
         self.assertEqual('OrangeHRM', self.driver.title, 'Webpage titles are not same ')
 
 if __name__ == "__main__":
-    unittest.main()
+    unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='C:\\Users\\aniket bista\\PythonUnitTestProject\\Report'))
